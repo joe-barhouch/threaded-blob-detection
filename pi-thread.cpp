@@ -50,7 +50,6 @@ void camera() {
 	//capturing 2 frames
 	capVideo.read(frame1);
 	capVideo.read(frame2);
-	cout << " \n camera\n";
 	mtx.unlock();
 }
 
@@ -66,7 +65,6 @@ int main(void) {
 			cameras.join();
 		}
 		while (capVideo.isOpened()) {
-			cout << "\n processing \n";
 			vector<Blob> blobs;			//create the blobs vector
 			vector<Blob> currentFrameBlobs;
 
